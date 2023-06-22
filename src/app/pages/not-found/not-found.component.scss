@@ -1,0 +1,84 @@
+.full-page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    overflow: hidden!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFF;
+    
+    .bg-image {
+        background-image: url("/assets/images/hero.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: brightness(0.3);
+        width: 100vw;
+        height: 100vh;
+    }
+
+    h1 {
+        font-size: 5rem;
+        margin: 0;
+        text-align: center;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+        position: absolute;
+        z-index: 999999;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        color: #FFFF;
+    }
+
+    code {
+        font-family: 'Roboto Mono', monospace;
+    }
+
+}
+
+@media only screen and (max-width: 1190px) {
+    .full-page {
+    
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            text-align: center;
+        }
+    }
+}
+@media only screen and (max-width: 965px) {
+    .full-page {
+    
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-align: center;
+        }
+    }
+}
+@media only screen and (max-width: 670px) {
+    .full-page {
+    
+        h1 {
+            font-size: 2rem;
+            margin: 0;
+            text-align: center;
+        }
+    }
+}
+@media only screen and (max-width: 425px) {
+    .full-page {
+    
+        h1 {
+            font-size: 1.5rem;
+            margin: 0;
+            text-align: center;
+        }
+    }
+}

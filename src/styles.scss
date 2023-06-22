@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden; 
+    overflow-y: scroll!important;
+}
+
+.fs-xs {
+    font-size: 8pt !important;
+}
+.fs-sm {
+    font-size: 10pt !important;
+}
+.fs-md {
+    font-size: 12pt !important;
+}
+.fs-lg {
+    font-size: 14pt !important;
+}
+.fs-xl {
+    font-size: 16pt !important;
+}
+.fs-xxl {
+    font-size: 18pt !important;
+}
+
+.lh-0 {
+    line-height: 0 !important;
+}
+
+.theme-blue {
+    background-color: #0071e3;
+}
+.theme-dark-grey {
+    background-color: #1d1d1f;
+}
+
+.text-theme-light {
+    color: #F5F5F7;
+}
+
+.offcanvas-backdrop {
+    display: none!important;
+}
+
+.rounded-18 {
+    border-radius: 18px !important;
+}
+.rounded-top-18 {
+    border-radius: 18px 18px 0 0 !important;
+}
+.overflow-hidden {
+    overflow: hidden !important;
+}

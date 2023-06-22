@@ -1,0 +1,77 @@
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1620912189875-3fdb2380621b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1620912189523-9a506dd6122a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1620912189964-10db511f62df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="container py-5">
+  <h1 class="text-center fw-bold mb-5">Os mais vendidos</h1>
+  <div class="row">
+    <div class="col-4">
+      <div class="card rounded-18 shadow border-0 overflow-hidden">
+        <img src="https://static.vecteezy.com/system/resources/previews/012/628/223/non_2x/floating-white-business-cards-on-transparent-background-free-png.png" class="card-img-top rounded-top-18 rounded-0" alt="">
+        <div class="card-body rounded-18 border-0">
+          <p class="card-text text-success mb-1"><small>novo</small></p>
+          <h5 class="card-title fw-semibold">Cartões de Visita</h5>
+          <p class="card-text"><small>a partir de</small> R$ 59,00</p>
+          <a href="#" class="btn btn-primary w-100 rounded-3">ver mais</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card rounded-18 shadow border-0 overflow-hidden">
+        <img src="https://static.vecteezy.com/system/resources/previews/012/628/223/non_2x/floating-white-business-cards-on-transparent-background-free-png.png" class="card-img-top rounded-top-18 rounded-0" alt="">
+        <div class="card-body rounded-18 border-0">
+          <p class="card-text text-success mb-1"><small>novo</small></p>
+          <h5 class="card-title fw-semibold">Cartões de Visita</h5>
+          <p class="card-text"><small>a partir de</small> R$ 59,00</p>
+          <a href="#" class="btn btn-primary w-100 rounded-3">ver mais</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card rounded-18 shadow border-0 overflow-hidden">
+        <img src="https://static.vecteezy.com/system/resources/previews/012/628/223/non_2x/floating-white-business-cards-on-transparent-background-free-png.png" class="card-img-top rounded-top-18 rounded-0" alt="">
+        <div class="card-body rounded-18 border-0">
+          <p class="card-text text-success mb-1"><small>novo</small></p>
+          <h5 class="card-title fw-semibold">Cartões de Visita</h5>
+          <p class="card-text"><small>a partir de</small> R$ 59,00</p>
+          <a href="#" class="btn btn-primary w-100 rounded-3">ver mais</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="offcanvas offcanvas-bottom fade bg-black" [ngClass]="cookies ? '' : 'show'" tabindex="-1" id="cookies">
+  <div class="offcanvas-body">
+    <div class="w-100 d-flex justify-content-between align-items-center">
+      <p class="mb-0 text-white">Clicando em "Concordar e fechar", você concorda com o armazenamento de cookies no seu dispositivo para melhorar a experiência e navegação no site. Saiba mais em nossa Política de Privacidade.</p>
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn btn-sm rounded-0 btn-light me-2" (click)="setItem()" aria-label="Close">Rejeitar</button>
+        <button type="button" class="btn btn-sm rounded-0 btn-light me-2" (click)="setItem()" aria-label="Close">Aceitar</button>
+        <button type="button" class="btn-close btn-close-white" (click)="setItem()" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+</div>
